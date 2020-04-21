@@ -1,29 +1,25 @@
 ## Python
 
-python 공부 내용 정리
+python 공부 내용 정리-[생활코딩](https://opentutorials.org/course/1) 참고
 
-### Markdown
+###python 실행
+cmd 입력: window+r
+1. 대화형 모드 실행: 복잡한 프로그램 작성에 어려움.
+cmd 창에 직접적으로 실행
+```
+python
+print('hello world')
+```
+2. 파일 모드 실행
+메모장 사용, 저장시 .py파일로 저장, 모든파일, utf-8
+```
+저장 위치 복붙 ex)C:\Users\hikyj\OneDrive\text\python_ruby
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```
 
-```**ilo** _ilo_ 'ilo'
+### 수와 계산
+```
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yj-kim-00/django-master/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
