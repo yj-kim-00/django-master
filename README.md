@@ -2,7 +2,7 @@
 
 python 공부 내용 정리-[생활코딩](https://opentutorials.org/course/1) 참고
 
-###python 실행
+### python 실행
 cmd 입력: window+r
 1. 대화형 모드 실행: 복잡한 프로그램 작성에 어려움.
 cmd 창에 직접적으로 실행
