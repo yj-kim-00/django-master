@@ -4,8 +4,10 @@
 참고: [위키백과, 파이썬](https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC)
 
 
-python 공부 내용 정리-[생활코딩](https://opentutorials.org/course/1) 참고
+python 공부 내용 정리. 참고:[생활코딩](https://opentutorials.org/course/1)
+
 2020.04.22까지 정리내용
+
 
 ### Python 실행
 cmd 입력: window+r
