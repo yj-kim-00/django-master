@@ -1,9 +1,13 @@
 ## Python
+파이썬(영어: Python)은 1991년 프로그래머인 귀도 반 로섬(Guido van Rossum)이 발표한 고급 프로그래밍 언어로, 플랫폼에 독립적이며 인터프리터식, 객체지향적, 동적 타이핑(dynamically typed) 대화형 언어이다. 파이썬이라는 이름은 귀도가 좋아하는 코미디 〈Monty Python's Flying Circus〉에서 따온 것이다.
+파이썬은 비영리의 파이썬 소프트웨어 재단이 관리하는 개방형, 공동체 기반 개발 모델을 가지고 있다. C언어로 구현된 Cython 구현이 사실상의 표준이다.
+참고: [위키백과, 파이썬](https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC)
+
 
 python 공부 내용 정리-[생활코딩](https://opentutorials.org/course/1) 참고
+2020.04.22까지 정리내용
 
-
-### python 실행
+### Python 실행
 cmd 입력: window+r
 1. 대화형 모드 실행: 복잡한 프로그램 작성에 어려움.
 cmd 창에 직접적으로 실행
