@@ -48,8 +48,8 @@ print("Hello")          #Hello
 print("Hello 'world'")  #Hello 'world'
 print('Hello "world"'   #Hello "world"
 ```
-"''" or '""'가능. 문자열의 시작과 끝을 나타내기 때문.(문자열로 인식하기 시작하기 때문.)
-'''' or """"의 경우 syntax error 발생
+("''") or ('""')가능. 문자열의 시작과 끝을 나타내기 때문.(문자열로 인식하기 시작하기 때문.)
+('''') or ("""")의 경우 syntax error 발생
 
 2. 문자열의 제어(문자연산)
 ```
