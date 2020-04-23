@@ -620,8 +620,53 @@ print('Who are you?')
 -------------------------------------------------------------------------------
 ## 코드란 무엇인가?
 
-
 ## 함수(function)
+### 함수 만들기
+```
+def a3():
+    print('aaa')
+a3()
+```
+aaa
+
+### 리턴값
+```
+def a3():
+    return 'aaa'
+print(a3())
+```
+aaa
+
+### 입력값
+```
+def a(num):
+    return 'a'*num
+print(a(3))
+```
+aaa
+
+### 여러개의 입력값
+```
+def make_string(str, num):
+    return str*num
+print(make_string('b', 3))
+```
+
+### 로그인 애플리케이션 
+```
+input_id = input("아이디를 입력해주세요.\n")
+def login(_id):
+    members = ['egoing', 'k8805', 'leezche']
+    for member in members:
+        if member == _id:
+            return True
+    return False
+if login(input_id):
+    print('Hello, '+input_id)
+else:
+    print('Who are you?')
+```
+
 
 ## 모듈
 
