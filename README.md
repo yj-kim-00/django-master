@@ -631,7 +631,9 @@ a3()               #a3을 호출, 함수의 본문 실행
 aaa
 
 ### 리턴값
-표현식(expression)
+함수를 재사용할 수 있음.
+
+- 표현식(expression). 다음의 함수 모두 같은 결과를 갖는다.
 ```
 print(a3())
 print('a'*3)
@@ -649,10 +651,11 @@ before
 aaa
 
 ### 입력값
+a를 원하는 갯수 만큼 출력하고자 한다.
 ```
 def a(num):
     return 'a'*num
-print(a(3))
+print(a(3))         #3개
 ```
 aaa
 
