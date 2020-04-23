@@ -540,4 +540,107 @@ after while
 
 
 ## 컨테이너와 반복문
-### 컨테이너와 반복문의 
+### 컨테이너와 반복문의 만남
+중복을 없앤다
+```
+members = ['egoing', 'leezche', 'graphittie']
+i = 0
+while i < len(members):  #i의 값이 members의 길이보다 작을 때 반복
+    print(members[i])
+    i = i + 1
+```
+결과:
+
+egoing
+
+leezche
+
+graphittie
+
+### for문의 등장
+atom에서 문단 선택하고 shift+방향키로 선택되는 문장 조절 가능, Ctrl+/ 를 누르면 주석화 됨. 반복하면 취소됨.
+
+for: 반복되어야 하는 것들이 한줄에 포함되어있음. 반면 while의 경우 다른 코드의 영향을 받을 수 있음.
+```
+members = ['egoing', 'leezche', 'graphittie']
+for member in members:                           #컨테이너(리스트) 내부의 요소들을 반복문이 실행될 때 마다 변수(member)에 넣음.
+    print(member)
+```
+결과:
+
+egoing
+
+leezche
+
+graphitti
+
+### for문의 활용
+- hello를 5번 반복
+```
+i=[0,1,2,3,4]
+for item in i:
+    print('hello')
+```
+- 반복을 많이 해야하는 경우
+
+range(5): 5번 반복
+```
+for item in range(5, 11):  #range(a, b): a~b-1 -> 0부터 숫자를 세기 때문
+    print(item)
+```
+결과:
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+### 로그인 애플리케이션에 투입-복잡해지기 시작
+수업에서는 input_output 파일에 있던 2.py container_loop 파일로 가져와 변형했다. ('로그인 애플리케이션에 입력기능 추가하기' 수업)
+
+for문을 통해 로그인 해야하는 사람이 많을 경우 if문만을 사용하기에는 if, elif를 명수만큼 반복해햐 한다는 문제점 해결
+```
+input_id = input("아이디를 입력해주세요.\n")
+members = ['egoing', 'k8805', 'leezche']
+for member in members:
+    if member == input_id:
+        print('Hello!, '+member)
+        import sys
+        sys.exit()                              #반복문이 끝난 이후에 또 Who are you?가 뜨는 것을 방지. 프로그램 전체 종료
+print('Who are you?')
+```
+
+-------------------------------------------------------------------------------
+## 코드란 무엇인가?
+
+
+## 함수(function)
+
+## 모듈
+
+## 객체 지향 프로그래밍
+
+## 객체 제작
+
+## 객체와 변수
+
+## 상속
+
+## 클래스 멤버
+
+## Override
+
+## 객체와 모듈
+
+## 다중상속
+
+## 믹스인(Mixin)
+
+## 패키지 매니저
