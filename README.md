@@ -622,19 +622,30 @@ print('Who are you?')
 
 ## 함수(function)
 ### 함수 만들기
-```
-def a3():
-    print('aaa')
 a3()
+```
+def a3():          #함수이름을 a3으로 정의(define)
+    print('aaa')   #함수의 본문
+a3()               #a3을 호출, 함수의 본문 실행
 ```
 aaa
 
 ### 리턴값
+표현식(expression)
+```
+print(a3())
+print('a'*3)
+print('aaa')
+```
+print(a3())를 가능하게 하는 방법
 ```
 def a3():
-    return 'aaa'
+    print('before')
+    return 'aaa'  #1. aaa가 함수의 값이 됨. 2. return을 만나면 함수를 종료시킨다.
+    print('after')
 print(a3())
 ```
+before
 aaa
 
 ### 입력값
