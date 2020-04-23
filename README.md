@@ -192,6 +192,8 @@ print("code3")      #if문 바깥에 존재
 
 ### 조건문의 활용
 
+조건문 뒤에는 비교연산자가 온다.
+
 로그인 프로그램(true 일때만 반응)-동등비교연산자
 ```
 input = 11
@@ -239,7 +241,7 @@ else:
 ### 사용자의 입력을 애플리케이션으로 가져오기
 
 입력값에 따라 다르게 동작
-- input 함수: 1.프로그램의 동작 중지 2.입력 후 enter 3.input함수가 입력값으로 변경되어 변수의 값으로 저장됨.
+- input 함수: 1. 프로그램의 동작 중지 2. 입력 후 enter 3. input함수가 입력값으로 변경되어 변수의 값으로 저장됨.
 - a.upper: a변수를 대문자로 출력
 ```
 in_str = input("입력해주세요.\n") #입력해주세요, 줄바꿈 후 입력값을 넣도록 설정됨.
@@ -284,10 +286,13 @@ print(type(in_str))
 
 ## 논리 연산
 ### 논리 연산자란?
-
+왼쪽과 오른쪽에 블리언이 온다.
+- and: 양쪽 모두 만족해야 true
+- or: true가 이김
+- not: 오른쪽에만 블리언이 오고, 오른쪽 블리언과 반대되는 결과를 내놓는다.
 
 ### OR
-
+in_str이 하나의 real_값을 만족하기만 하면 로그인을 시켜주는 프로그램. 그렇지 않은 경우 Who are you?
 ```
 in_str = input("아이디를 입력해주세요.\n")
 real_egoing = "egoing"
@@ -297,3 +302,78 @@ if real_egoing == in_str or real_k8805 == in_str:
 else:
   print("Who are you?")
 ```
+
+### AND
+- 아이디는 맞았으나, 비밀번호가 잘못된 경우 반영됨. if 중첩
+```
+input_id = input("아이디를 입력해주세요.\n")
+input_pwd = input("비밀번호를 입력해주세요.\n")
+real_id = "egoing"
+real_pwd = "11"
+if real_id == input_id:
+    if real_pwd == input_pwd:                       #id가 맞은 경우 진입
+        print("Hello!")
+    else:
+        print("잘못된 비밀번호입니다")
+else:
+    print("잘못된 아이디입니다")
+```
+- 아이디와 비밀번호를 모두 만족할 때 로그인을 시켜주는 프로그램.
+```
+input_id = input("아이디를 입력해주세요.\n")
+input_pwd = input("비밀번호를 입력해주세요.\n")
+real_id = "egoing"
+real_pwd = "11"
+if real_id == input_id and real_pwd == input_pwd:
+    print("Hello!")
+else:
+    print("로그인에 실패했습니다")
+```
+
+## [Cheat Sheet](http://overapi.com/python)
+- identifiers: 식별자
+- variables assignment: 변수에 값을 할당하는 방법
+=: 대입연산자
+- Conditional Statements: 조건문
+- etc.
+
+## 주석 (Comment)
+부가적인 요소
+- (''' '''): 문자열이 됨. 긴 문장을 모두 문자열로 하고싶을 때 사용. enter를 쳐도 사용 가능
+- #
+``` 
+'''
+조건문 예제
+egoing
+2015
+'''
+# user input password
+input = 33
+real_egoing = 11
+#real_k8805 = "ab"
+if real_egoing == input:
+  print("Hello!, egoing")
+#elif real_k8805 == input:
+#  print("Hello!, k8805")
+else:
+  print("Who are you?")
+```
+
+## 컨테이너 (Container)
+하나의 리스트 타입 안에 다양한 데이터 타입이 들어갈 수 있다.
+```
+print(type('egoing'))                             #<class 'str'>
+name = 'egoing'
+print(name) #egoing
+print(type(['egoing', 'leezche', 'graphittie']))  #<class 'list'>
+names = ['egoing', 'leezche', 'graphittie']       #[eliments, eliments, eliments]: 컨테이너의 구성요소를 원소라고 한다.
+print(names)                                      #['egoing', 'leezche', 'graphittie']
+print(names[0])                                   #egoing [index]: 원소의 순번, 색인
+print(names[2])                                   #graphittie
+egoing = ['programmer', 'seoul', 25, False]
+egoing[1] = 'busan'                               #seoul을 busan으로 변경하고 싶을 때
+print(egoing) #['programmer', 'busan', 25, False]
+```
+
+## 사용 설명서
+
