@@ -361,7 +361,7 @@ else:
   print("Who are you?")
 ```
 
-
+-------------------------------------------------------------------------------
 ## 컨테이너 (Container)
 하나의 리스트 타입 안에 다양한 데이터 타입이 들어갈 수 있다.
 ```
@@ -397,4 +397,147 @@ print(al)                   #['B', 'C', 'D', 'E']
 ```
 
 
-## 영어와 프로그래밍
+## 반복문**
+### While
+어떤 조건이 만족되는 동안 반복적으로 실행한다.
+```
+while False:
+    print('Hello world')  #아무것도 실행되지 않음
+print('After while')      #After while :반복문 안에 포함되지 않기 때문
+```
+```
+while True:
+    print('Hello world')  
+print('After while')
+```
+결과: 
+Hello world
+
+Hello world
+
+Hello world
+
+.
+
+.
+
+.
+무한히 반복
+
+### 반복조건
+3번을 반복하기 원할 때
+```
+i = 0
+while i < 3:
+    print('Hello world')
+    i = i + 1              #i의 값이 1씩 증가
+```
+결과:
+Hello world
+
+Hello world
+
+Hello world
+
+### 활용
+프로그램을 만드는 프로그램 만들기
+
+문자열과 숫자를 더하는 것을 불가능.
+
+print('print("Hello world ' + i*9 + '")') 의 결과는 다음과 같다.
+
+TypeError: Can't convert 'int' object to str implicitly
+
+이를 방지하기 위한 방법.
+```
+i = 0
+while i < 10:
+    print('print("Hello world '+str(i*9)+'")')  #i를 문자열에서 제외시킨 후 문자열로 변환해야 한다.
+    i = i + 1
+```
+결과:
+print("Hello world 0")
+
+print("Hello world 9")
+
+print("Hello world 18")
+
+print("Hello world 27")
+
+print("Hello world 36")
+
+print("Hello world 45")
+
+print("Hello world 54")
+
+print("Hello world 63")
+
+print("Hello world 72")
+
+print("Hello world 81")
+
+과 같이 10번 반복된다.
+
+### 조건문과 반복문의 합체
+- 4를 출력하고 싶지 않을 때
+```
+i = 0
+while i < 10:
+    if i != 4:
+        print(i)
+    i = i + 1
+```
+결과:
+1
+
+2
+
+3
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+- 4만 출력하고 싶을 때
+```
+i = 0
+while i < 10:
+    if i == 4:
+        print(i)
+    i = i + 1
+```
+결과: 4
+
+- i=4일 때 반복문을 멈추고 싶을 때
+```
+i = 0
+while i < 10:
+    if i == 4:
+        break
+    print(i)
+    i = i + 1
+print('after while')
+```
+결과:
+
+0
+
+1
+
+2
+
+3
+
+after while
+
+
+## 컨테이너와 반복문
+### 컨테이너와 반복문의 
