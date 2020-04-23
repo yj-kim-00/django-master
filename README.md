@@ -330,12 +330,14 @@ else:
     print("로그인에 실패했습니다")
 ```
 
+
 ## [Cheat Sheet](http://overapi.com/python)
 - identifiers: 식별자
 - variables assignment: 변수에 값을 할당하는 방법
 =: 대입연산자
 - Conditional Statements: 조건문
 - etc.
+
 
 ## 주석 (Comment)
 부가적인 요소
@@ -359,6 +361,7 @@ else:
   print("Who are you?")
 ```
 
+
 ## 컨테이너 (Container)
 하나의 리스트 타입 안에 다양한 데이터 타입이 들어갈 수 있다.
 ```
@@ -375,5 +378,23 @@ egoing[1] = 'busan'                               #seoul을 busan으로 변경�
 print(egoing) #['programmer', 'busan', 25, False]
 ```
 
-## 사용 설명서
 
+## 사용 설명서
+### 사용 설명서란?
+문서(Documentation)
+1. 입문서(getting started), 자습서(tutorial)
+2. 검색(search), 참조(reference)-자료의 구조 파악
+
+### [Python의 문서 보는 법](https://opentutorials.org/course/1750/9697)과 리스트 심화
+[Python 3.x Docs](https://docs.python.org/3/)
+```
+al = ['A', 'B', 'C', 'D']
+print(len(al))              # 4 :len:length
+al.append('E')              #리스트의 끝에 추가(append)
+print(al)                   #['A', 'B', 'C', 'D', 'E']
+del(al[0])                  #del(al[n]) :n번째 원소 제거
+print(al)                   #['B', 'C', 'D', 'E']
+```
+
+
+## 영어와 프로그래밍
