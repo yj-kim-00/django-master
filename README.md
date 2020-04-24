@@ -201,7 +201,10 @@ real = 11
 if real == input:
     print("Hello!")
 ```
-결과: Hello!
+결과
+```
+Hello!
+```
 
 ### else: 한가지 조건에 반응
 
@@ -214,7 +217,10 @@ if real == input:
 else:
     print("Who are you?")
 ```
-결과: Who are you?
+결과
+```
+Who are you?
+```
 
 ### else if: 여러가지 조건에 반응
 
@@ -234,8 +240,10 @@ elif real_k8805 == in_str:
 else:
   print("Who are you?")
 ```
-결과: "Hello!, k8805"
-
+결과
+```
+"Hello!, k8805"
+```
 
 ## 입력과 출력
 ### 사용자의 입력을 애플리케이션으로 가져오기
@@ -247,11 +255,12 @@ else:
 in_str = input("입력해주세요.\n") #입력해주세요, 줄바꿈 후 입력값을 넣도록 설정됨.
 print(in_str.upper()+" World!")  #입력값을 항상 대문자로 출력하도록 설정
 ```
+결과
+```
 입력해주세요
-
 hello
-
 HELLO World!
+```
 
 ### 로그인 애플리케이션에 입력기능 추가하기
 ```
@@ -265,24 +274,24 @@ elif real_k8805 == in_str:
 else:
   print("Who are you?")
 ```
+결과
+```
 아이디를 입력해주세요
-
 11
-
 Hello!, yj-kim-00
-
+```
 
 *주의!* 숫자가 문자열로 인식된다.
 ```
 in_str = input("아이디를 입력해주세요.\n")
 print(type(in_str))
 ```
+결과
+```
 아이디를 입력해주세요.
-
 11
-
 <class 'str'>
-
+```
 
 ## 논리 연산
 ### 논리 연산자란?
@@ -334,7 +343,7 @@ else:
 ## [Cheat Sheet](http://overapi.com/python)
 - identifiers: 식별자
 - variables assignment: 변수에 값을 할당하는 방법
-=: 대입연산자
+- 대입연산자
 - Conditional Statements: 조건문
 - etc.
 
@@ -405,24 +414,22 @@ while False:
     print('Hello world')  #아무것도 실행되지 않음
 print('After while')      #After while :반복문 안에 포함되지 않기 때문
 ```
+
 ```
 while True:
     print('Hello world')  
 print('After while')
 ```
-결과: 
+결과
+```
 Hello world
-
 Hello world
-
 Hello world
-
 .
-
 .
-
 .
 무한히 반복
+```
 
 ### 반복조건
 3번을 반복하기 원할 때
@@ -432,12 +439,12 @@ while i < 3:
     print('Hello world')
     i = i + 1              #i의 값이 1씩 증가
 ```
-결과:
+결과
+```
 Hello world
-
 Hello world
-
 Hello world
+```
 
 ### 활용
 프로그램을 만드는 프로그램 만들기
@@ -455,27 +462,19 @@ while i < 10:
     print('print("Hello world '+str(i*9)+'")')  #i를 문자열에서 제외시킨 후 문자열로 변환해야 한다.
     i = i + 1
 ```
-결과:
+결과
+```
 print("Hello world 0")
-
 print("Hello world 9")
-
 print("Hello world 18")
-
 print("Hello world 27")
-
 print("Hello world 36")
-
 print("Hello world 45")
-
 print("Hello world 54")
-
 print("Hello world 63")
-
 print("Hello world 72")
-
 print("Hello world 81")
-
+```
 과 같이 10번 반복된다.
 
 ### 조건문과 반복문의 합체
@@ -487,24 +486,18 @@ while i < 10:
         print(i)
     i = i + 1
 ```
-결과:
+결과
+```
 1
-
 2
-
 3
-
 5
-
 6
-
 7
-
 8
-
 9
-
 10
+```
 
 - 4만 출력하고 싶을 때
 ```
@@ -514,8 +507,10 @@ while i < 10:
         print(i)
     i = i + 1
 ```
-결과: 4
-
+결과
+```
+4
+```
 - i=4일 때 반복문을 멈추고 싶을 때
 ```
 i = 0
@@ -526,17 +521,14 @@ while i < 10:
     i = i + 1
 print('after while')
 ```
-결과:
-
+결과
+```
 0
-
 1
-
 2
-
 3
-
 after while
+```
 
 
 ## 컨테이너와 반복문
@@ -549,13 +541,12 @@ while i < len(members):  #i의 값이 members의 길이보다 작을 때 반복
     print(members[i])
     i = i + 1
 ```
-결과:
-
+결과
+```
 egoing
-
 leezche
-
 graphittie
+```
 
 ### for문의 등장
 atom에서 문단 선택하고 shift+방향키로 선택되는 문장 조절 가능, Ctrl+/ 를 누르면 주석화 됨. 반복하면 취소됨.
@@ -566,13 +557,12 @@ members = ['egoing', 'leezche', 'graphittie']
 for member in members:                           #컨테이너(리스트) 내부의 요소들을 반복문이 실행될 때 마다 변수(member)에 넣음.
     print(member)
 ```
-결과:
-
+결과
+```
 egoing
-
 leezche
-
 graphitti
+```
 
 ### for문의 활용
 - hello를 5번 반복
@@ -588,19 +578,15 @@ range(5): 5번 반복
 for item in range(5, 11):  #range(a, b): a~b-1 -> 0부터 숫자를 세기 때문
     print(item)
 ```
-결과:
-
+결과
+```
 5
-
 6
-
 7
-
 8
-
 9
-
 10
+```
 
 ### 로그인 애플리케이션에 투입-복잡해지기 시작
 수업에서는 input_output 파일에 있던 2.py container_loop 파일로 가져와 변형했다. ('로그인 애플리케이션에 입력기능 추가하기' 수업)
@@ -628,7 +614,9 @@ def a3():          #함수이름을 a3으로 정의(define)
     print('aaa')   #함수의 본문
 a3()               #a3을 호출, 함수의 본문 실행
 ```
+```
 aaa
+```
 
 ### 리턴값
 함수를 재사용할 수 있음.
@@ -639,7 +627,7 @@ print(a3())
 print('a'*3)
 print('aaa')
 ```
-print(a3())를 가능하게 하는 방법
+- print(a3())를 가능하게 하는 방법
 ```
 def a3():
     print('before')
@@ -647,8 +635,10 @@ def a3():
     print('after')
 print(a3())
 ```
+```
 before
 aaa
+```
 
 ### 입력값
 a를 원하는 갯수 만큼 출력하고자 한다.
@@ -657,7 +647,9 @@ def a(num):
     return 'a'*num
 print(a(3))         #3개
 ```
+```
 aaa
+```
 
 ### 여러개의 입력값
 a 뿐만 아니라 어느 문자든 여러개 출력하고 싶다.
@@ -666,9 +658,12 @@ def make_string(str, num):  #자리수 맞춰줘야함
     return str*num
 print(make_string('b', 3))  #str=b, num=3
 ```
+```
 bbb
+```
 
 ### 로그인 애플리케이션 
+반복이 발생하는 것을 발견했을 때, 함수로 만들어야 한다.
 ```
 input_id = input("아이디를 입력해주세요.\n")
 def login(_id):
