@@ -666,7 +666,7 @@ bbb
 반복이 발생하는 것을 발견했을 때, 함수로 만들어야 한다.
 ```
 input_id = input("아이디를 입력해주세요.\n")
-def login(_id):
+def login(_id):                                   #login(_id) 함수 정의, id는 파이썬에서 사용 용도가 있기 때문에(파란색) _id로 표현하여 변수로 지정해준다.(주황색)
     members = ['egoing', 'k8805', 'leezche']
     for member in members:
         if member == _id:
