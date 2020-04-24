@@ -660,11 +660,13 @@ print(a(3))         #3개
 aaa
 
 ### 여러개의 입력값
+a 뿐만 아니라 어느 문자든 여러개 출력하고 싶다.
 ```
-def make_string(str, num):
+def make_string(str, num):  #자리수 맞춰줘야함
     return str*num
-print(make_string('b', 3))
+print(make_string('b', 3))  #str=b, num=3
 ```
+bbb
 
 ### 로그인 애플리케이션 
 ```
